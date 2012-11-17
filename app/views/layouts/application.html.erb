@@ -7,8 +7,22 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<div id="container">
+	<header>Songz</header>
+	<nav>
+		<ul>
+		<li><%= link_to "Home", root_path %></li>
+		<li class="cat_names"><%= link_to "Artists", artists_path %></li>
+		<li class="add"><%= link_to "+", new_artist_path %></li>
+		<li class="cat_names"><%= link_to "Albums", albums_path %></li>
+		<li class="add"><%= link_to "+", new_album_path %></li>
+		<li class="cat_names"><%= link_to "Songs", albums_path %></li>
+		<li class="add"><%= link_to "+", new_song_path %></li>
+		</ul>
+	</nav>
 
-<%= yield %>
+	<%= yield %>
 
+	</div><!-- #container -->
 </body>
 </html>
