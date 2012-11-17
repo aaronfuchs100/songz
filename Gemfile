@@ -9,7 +9,7 @@ gem 'pg'
 gem 'pry-rails'
 gem 'fog'
 gem 'annotate'
-gem 'railsfootnotes'
+gem 'rails-footnotes'
 gem 'carrier'
 
 
