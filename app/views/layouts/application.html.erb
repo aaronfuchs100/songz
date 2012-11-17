@@ -11,19 +11,22 @@
 	<header>Songz</header>
 	<nav>
 		<ul>
-		<li><%= link_to "Home", root_path %></li>
+		<li class="home"><%= link_to "Home", root_path %></li>
 		<li class="category"><%= link_to "Artists", artists_path %></li>
-		<li class="add"><%= link_to "Add New Artist", new_artist_path %></li>
+		<li class="add"><%= link_to "Add", new_artist_path %></li>
 		<li class="category"><%= link_to "Albums", albums_path %></li>
-		<li class="add"><%= link_to "Add New Album", new_album_path %></li>
+		<li class="add"><%= link_to "Add", new_album_path %></li>
 		<li class="category"><%= link_to "Songs", albums_path %></li>
-		<li class="add"><%= link_to "Add New Song", new_song_path %></li>
+		<li class="add"><%= link_to "Add", new_song_path %></li>
 		</ul>
 	</nav>
 
 	<%= yield %>
 
 	</div><!-- #container -->
+
+	<div class="clear"></div>
+	
 	<footer>&copy; Songz, ltd</footer>
 
 </body>
