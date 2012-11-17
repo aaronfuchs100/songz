@@ -14,6 +14,8 @@ class Album < ActiveRecord::Base
 	belongs_to :artists
 	has_many :songs
   mount_uploader :photo, PictureUploader
+  
+  validates :name, :presence => true  
  
 
 	# validates :name, :photo, :presence => true
