@@ -1,13 +1,11 @@
+<<<<<<< HEAD
 <h1>Listing artists</h1>
+=======
+<h1>Artists</h1>
+>>>>>>> ea15c76d6945307744fb63be60e402eccfd0d686
 
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Photo</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+Name
+Photo
 
 <% @artists.each do |artist| %>
   <tr>
@@ -16,7 +14,6 @@
     <td><%= link_to 'Show', artist %></td>
     <td><%= link_to 'Edit', edit_artist_path(artist) %></td>
     <td><%= link_to 'Destroy', artist, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
 <% end %>
 </table>
 
