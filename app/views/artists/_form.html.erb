@@ -1,3 +1,5 @@
+<%= render :partial => 'shared/errors', :locals => {:object => @artist} %>
+
 <%= form_for @artist do |f| %> 
      <div class = 'field'>
      	<%= f.label :name %>
@@ -8,10 +10,10 @@
 	    <%= f.file_field :photo %>
 	    <%= f.hidden_field :photo_cache %>
 	    <%= f.text_field :remote_photo_url %>
-	   
-	   
 
      </div>
+
+     
      
      <div class = 'field'>
      	<%= f.submit %>

@@ -44,11 +44,11 @@ body {
   background-image: url(assets/images/rails.png);
   text-decoration: none;
   color: black;
+  background-color: #333;
 }
 
 h1 {
-  font-size: 70px;
-  font-weight: bold;
+  font-size: 30px;
   letter-spacing: -3px;
   margin-bottom: 40px;
   color: black;
@@ -58,12 +58,20 @@ header {
   font-size: 50px;
   text-transform: uppercase;
   letter-spacing: 2px;
-  margin-bottom: 30px;
-  padding-bottom:20px;
+  margin: 0 240px;
   color: black;
   font-weight: bold;
   font-family: 'Montserrat Subrayada', sans-serif;
   float: left;
+  background-color: #E8E8E8;
+
+}
+
+footer{
+  
+  margin: 50px 260px;
+  color: gray;
+
 
 }
 
@@ -107,13 +115,15 @@ nav li {
 /*--------------------- LAYOUT ------------------*/
 
 
-.container {
+#container {
   width: 900px;
-  margin: auto;
+  margin: 0 auto;
   margin-top:30px;
-  padding: 100px;
+  padding: 20px 100px;
+  min-height: 900px;
   background: white;
   text-decoration: none;
+  border: 2px solid black;
 }
 
 .category {
