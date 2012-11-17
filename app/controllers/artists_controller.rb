@@ -5,12 +5,13 @@ class ArtistsController < ApplicationController
 	def edit
 		@artist = Artist.find(params[:id])
 	end
+
+
 	def new
 		@artist = Artist.new
 	end
 	def show
-		artist_id = params[:id]
-		@artist = Artist.find(artist_id)
+		@artist = Artist.find(params[:id])
 	end
 	def create
 		@artist = Artist.new(params[:artist])
