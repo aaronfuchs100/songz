@@ -1,0 +1,14 @@
+
+<p>
+  <b>Name:</b>
+  <%= @asong.name %>
+</p>
+
+<p>
+  <b>Photo:</b>
+  <%= image_tag @song.photo %>
+</p>
+
+
+<%= link_to 'Edit', edit_song_path(@song) %> 
+<%= link_to 'Back', songs_path %>
