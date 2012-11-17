@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @artist.name %>
+</p>
+
+<p>
+  <b>Photo:</b>
+  <%= image_tag @artist.photo %>
+</p>
+
+
+<%= link_to 'Edit', edit_artist_path(@person) %> |
+<%= link_to 'Back', artists_path %>
