@@ -12,6 +12,7 @@
 class Artist < ActiveRecord::Base
 	has_many :albums
 	has_many :songs
+	mount_uploader :photo, PictureUploader
 	# validates :name, :photo, :presence => true
 	# validates :cost, :numericality => { :greater_than => 10}
 end
