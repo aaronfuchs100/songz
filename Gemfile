@@ -10,7 +10,7 @@ gem 'pry-rails'
 gem 'fog'
 gem 'annotate'
 gem 'rails-footnotes'
-gem 'carrier'
+gem 'carrierwave'
 
 
 # Gems used only for assets and not required
