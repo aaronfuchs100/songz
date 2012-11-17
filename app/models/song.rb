@@ -12,12 +12,12 @@
 #
 
 class Song < ActiveRecord::Base
-	belongs_to :albums
-	belongs_to :artists
+	belongs_to :album
+	belongs_to :artist
 	mount_uploader :photo, PictureUploader
 
   validates :name, :presence => true
-  validates :photo, :presence => true
+  validates :name, :presence => true
 
 	# validates :name, :photo, :presence => true
 	# validates :cost, :numericality => { :greater_than => 10}

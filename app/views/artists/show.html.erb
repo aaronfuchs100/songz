@@ -13,6 +13,30 @@
  <div class ="clear">
 	</div>
 
+  <ul>
+  <% Album.all.each do |album| %>
+
+  <p>Details: </p>
+
+    <% if album.artist_id == @artist.id %>
+      <li><%= album.name %></li>
+    
+      <ul>
+        <% Song.all.each do |song| %>
+
+          <% if song.album_id == album.id %>
+            <li><%= song.name %></li>
+          <% end %>
+        
+        <% end %> 
+      </ul>
+
+    <% end %>  
+  <% end %>
+  </ul>
+
+
+
 
 <%= link_to 'Edit', edit_artist_path(@artist) %> 
 <%= link_to 'Back', artists_path %>

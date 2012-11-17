@@ -1,6 +1,7 @@
 <%= render :partial => 'shared/errors', :locals => {:object => @album} %>
 
-<%= form_for @album do |f| %> 
+<%= form_for @album do |f| %>
+<div class="form_ui"> 
      <div class = 'field'>
       <%= f.label :name %>
       <%= f.text_field :name %>
@@ -13,10 +14,19 @@
       <%= image_tag(@album.photo_url) if @album.photo? %>
 
      </div>
+
+     <div class='field'>
+         <% Artist.all.each do |artist| %>
+           <%= check_box_tag 'album[artist_ids][]', artist.id, artist.in?(@album.artist.to_a) %>
+           <span><%= artist.name %></span>
+         <% end %>
+     
+     <div class = 'field'>
      
      <div class = 'field'>
       <%= f.submit %>
      </div>
+ </div>    
      <div class ="clear">
   </div>
 <% end %>
