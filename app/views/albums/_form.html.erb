@@ -1,6 +1,7 @@
 <%= render :partial => 'shared/errors', :locals => {:object => @album} %>
 
-<%= form_for @album do |f| %> 
+<%= form_for @album do |f| %>
+<div class="form_ui"> 
      <div class = 'field'>
       <%= f.label :name %>
       <%= f.text_field :name %>
@@ -17,6 +18,7 @@
      <div class = 'field'>
       <%= f.submit %>
      </div>
+ </div>    
      <div class ="clear">
   </div>
 <% end %>

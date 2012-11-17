@@ -42,7 +42,7 @@ body {
   font-family: Helvetica, sans-serif;
   background: white;
   text-decoration: none;
-  color: black;
+  color: #FFAE00;
   background-color: #333;
 }
 
@@ -75,7 +75,7 @@ footer{
 }
 
 header a {
-  color: black;
+  color: #FFAE00;
 }
 
 nav {
@@ -98,6 +98,7 @@ nav li {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 20px;
+  font-weight: bolder;
   float: left;
   text-align: center;
   color: black;
@@ -149,4 +150,16 @@ img{
   width: 200px;
 }
 
+.form_ui {
+  width:  600px;
+  margin-left:  60px;
+  padding:  15px;
+  min-height: 150px;
+  border-bottom-left-radius: 20px;
+  box-shadow: 3px 1px 25px #FFAE00;
+}
+
+.field {
+  
+}
 
