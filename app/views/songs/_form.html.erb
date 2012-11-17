@@ -12,6 +12,12 @@
 	   
 
      </div>
+
+      <div class='field'>
+         <% Album.all.each do |album| %>
+           <%= check_box_tag 'song[album_ids][]', album.id, album.in?(@song.album.to_a) %>
+           <span><%= album.name %></span>
+         <% end %>
      
      <div class = 'field'>
      	<%= f.submit %>
