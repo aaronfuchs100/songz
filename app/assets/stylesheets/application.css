@@ -47,8 +47,7 @@ body {
 }
 
 h1 {
-  font-size: 70px;
-  font-weight: bold;
+  font-size: 30px;
   letter-spacing: -3px;
   margin-bottom: 40px;
   color: black;
@@ -63,12 +62,15 @@ header {
   font-weight: bold;
   font-family: 'Montserrat Subrayada', sans-serif;
   float: left;
+  background-color: #E8E8E8;
 
 }
 
 footer{
-  margin-top: 30px;
-  margin: 0 300px;
+  
+  margin: 50px 260px;
+  color: gray;
+
 
 }
 
