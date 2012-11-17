@@ -14,6 +14,7 @@
 class Song < ActiveRecord::Base
 	belongs_to :albums
 	belongs_to :artists
+	mount_uploader :photo, PictureUploader
 
 	# validates :name, :photo, :presence => true
 	# validates :cost, :numericality => { :greater_than => 10}
