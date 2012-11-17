@@ -1,18 +1,25 @@
-<h1>Listing album</h1>
+<h1>Albums</h1>
 
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Photo</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+    
+
+    <div class ="clear">
+  </div>
+    
 
 <% @albums.each do |album| %>
   <tr>
-    <td><%= album.name %></td>
+    <p>Album: <%= album.name %> </p>
+
+    <div class ="clear">
+    </div>
+
+    <p>Photo</p>
+
     <td><%= image_tag album.photo %></td>
+
+    <div class ="clear">
+     </div>
+
     <td><%= link_to 'Show', album %></td>
     <td><%= link_to 'Edit', edit_album_path(album) %></td>
     <td><%= link_to 'Destroy', album, method: :delete, data: { confirm: 'Are you sure?' } %></td>
