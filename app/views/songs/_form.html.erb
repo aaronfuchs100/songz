@@ -1,4 +1,7 @@
-<%= form_for @song do |f| %> 
+<%= render :partial => 'shared/errors', :locals => {:object => @song} %>
+
+<%= form_for @song do |f| %>
+<div class="form_ui"> 
      <div class = 'field'>
      	<%= f.label :name %>
      	<%= f.text_field :name %>
@@ -8,8 +11,6 @@
 	    <%= f.file_field :photo %>
 	    <%= f.hidden_field :photo_cache %>
 	    <%= f.text_field :remote_photo_url %>
-	   
-	   
 
      </div>
 
@@ -22,6 +23,7 @@
      <div class = 'field'>
      	<%= f.submit %>
      </div>
+</div>     
 <% end %>
 
 <br>

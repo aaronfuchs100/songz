@@ -39,10 +39,10 @@
 /*--------------------- BASE STYLES ------------------*/
 
 body {
-  font-family: Helvetica, sans-serif;
+  font-family: 'Source Code Pro', sans-serif;
   background: white;
   text-decoration: none;
-  color: black;
+  color: #FFAE00;
   background-color: #333;
 }
 
@@ -57,28 +57,24 @@ header {
   font-size: 50px;
   text-transform: uppercase;
   letter-spacing: 2px;
-  margin: 0 240px;
   color: black;
   font-weight: bold;
   font-family: 'Montserrat Subrayada', sans-serif;
   float: left;
   background-color: #E8E8E8;
-
+  width: 900px;
+  text-align: center;
 }
 
-footer{
-  
-  margin: 50px 260px;
-  color: gray;
-
-
-}
 
 header a {
-  color: black;
+  color: #FFAE00;
 }
 
 nav {
+  background: #E8E8E8; 
+  width: 900px;
+  margin: 0px;
   float: left;
   text-decoration: none;
   color: black;
@@ -98,6 +94,7 @@ nav li {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 20px;
+  font-weight: bolder;
   float: left;
   text-align: center;
   color: black;
@@ -111,19 +108,30 @@ nav li {
       color: green;
      }
 
+footer{
+  margin: 50px 260px;
+  color: gray;
+}
+
 /*--------------------- LAYOUT ------------------*/
 
 
 #container {
   width: 900px;
   margin: 0 auto;
-  margin-top:30px;
   padding: 20px 100px;
   min-height: 900px;
   background: white;
   text-decoration: none;
-  border: 2px solid black;
 }
+
+#topz {
+  width: 900px;
+  margin: 0 auto;
+  background: white;
+  height: 100px;
+}
+
 
 .category {
   color: white;
@@ -140,7 +148,7 @@ nav li {
 }
 
 .home {
-  margin: 0 50px 0 50px;
+  margin: 0 50px 10px 150px;
   text-decoration: none;
 }
 
@@ -148,5 +156,19 @@ img{
   height: 200px;
   width: 200px;
 }
+
+.form_ui {
+  width:  600px;
+  margin-left:  60px;
+  padding:  15px;
+  min-height: 150px;
+  border-bottom-left-radius: 20px;
+  box-shadow: 3px 1px 25px #FFAE00;
+}
+
+.field {
+  
+}
+=
 
 

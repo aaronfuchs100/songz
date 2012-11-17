@@ -8,7 +8,7 @@
 </head>
 <body>
 	
-	<div id="container">
+	<div id="topz">
 		<header>Songz</header>
 		<nav>
 			<ul>
@@ -21,14 +21,14 @@
 			<li class="add"><%= link_to "Add", new_song_path %></li>
 			</ul>
 		</nav>
-
+	</div><!--#topz-->
+	
 		<div class ="clear">
 		</div>
 
+
+	<div id="container">	
 		<%= yield %>
-
-		
-
 	</div><!-- #container -->
 
 	<footer>&copy; Songz, ltd</footer>
