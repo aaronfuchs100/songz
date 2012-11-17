@@ -1,4 +1,5 @@
-
+@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro);
+@import url(http://fonts.googleapis.com/css?family=Montserrat+Subrayada);
 
 
 
@@ -41,6 +42,8 @@ body {
   font-family: Helvetica, sans-serif;
   background: white;
   background-image: url(assets/images/rails.png);
+  text-decoration: none;
+  color: black;
 }
 
 h1 {
@@ -52,19 +55,54 @@ h1 {
 }
 
 header {
-  font size: 10px;
+  font-size: 50px;
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-bottom: 30px;
-  border-bottom: 1px solid black;
   padding-bottom:20px;
   color: black;
   font-weight: bold;
+  font-family: 'Montserrat Subrayada', sans-serif;
+  float: left;
+
 }
 
 header a {
-  color: blue;
+  color: black;
 }
+
+nav {
+  float: left;
+  text-decoration: none;
+  color: black;
+}
+
+nav ul {
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+
+nav li {
+  font-family: 'Source Code Pro', sans-serif;
+  padding: 5px;
+  text-align: left;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+  float: left;
+  text-align: center;
+  color: black;
+}
+     nav li a {
+        text-decoration: none;
+        display: block;
+     }
+
+     nav li a:hover {
+      color: green;
+     }
 
 /*--------------------- LAYOUT ------------------*/
 
@@ -73,8 +111,33 @@ header a {
   width: 900px;
   margin: auto;
   margin-top:30px;
-  padding: 30px;
+  padding: 100px;
   background: white;
+  text-decoration: none;
+}
+
+.category {
+  color: white;
+  text-decoration: none;
+}
+
+.add {
+  color: black;
+  text-align: left;
+  margin-right: 50px;
+  text-decoration: none;
+  font-size: 15px;
+  margin-top: 1px;
+}
+
+.home {
+  margin: 0 50px 0 50px;
+  text-decoration: none;
+}
+
+img{
+  height: 200px;
+  width: 200px;
 }
 
 
