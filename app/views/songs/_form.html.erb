@@ -1,3 +1,5 @@
+<%= render :partial => 'shared/errors', :locals => {:object => @song} %>
+
 <%= form_for @song do |f| %> 
      <div class = 'field'>
      	<%= f.label :name %>
