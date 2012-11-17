@@ -3,10 +3,17 @@
 Name
 Photo
 
+ <div class ="clear">
+	</div>
+
 <% @artists.each do |artist| %>
   <tr>
     <td><%= artist.name %></td>
+     <div class ="clear">
+	</div>
     <td><%= image_tag artist.photo %></td>
+     <div class ="clear">
+	</div>
     <td><%= link_to 'Show', artist %></td>
     <td><%= link_to 'Edit', edit_artist_path(artist) %></td>
     <td><%= link_to 'Destroy', artist, method: :delete, data: { confirm: 'Are you sure?' } %></td>

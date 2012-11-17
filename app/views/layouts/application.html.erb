@@ -8,26 +8,30 @@
 </head>
 <body>
 	<div id="container">
-	<header>Songz</header>
-	<nav>
-		<ul>
-		<li class="home"><%= link_to "Home", root_path %></li>
-		<li class="category"><%= link_to "Artists", artists_path %></li>
-		<li class="add"><%= link_to "Add", new_artist_path %></li>
-		<li class="category"><%= link_to "Albums", albums_path %></li>
-		<li class="add"><%= link_to "Add", new_album_path %></li>
-		<li class="category"><%= link_to "Songs", songs_path %></li>
-		<li class="add"><%= link_to "Add", new_song_path %></li>
-		</ul>
-	</nav>
+		<header>Songz</header>
+		<nav>
+			<ul>
+			<li class="home"><%= link_to "Home", root_path %></li>
+			<li class="category"><%= link_to "Artists", artists_path %></li>
+			<li class="add"><%= link_to "Add", new_artist_path %></li>
+			<li class="category"><%= link_to "Albums", albums_path %></li>
+			<li class="add"><%= link_to "Add", new_album_path %></li>
+			<li class="category"><%= link_to "Songs", songs_path %></li>
+			<li class="add"><%= link_to "Add", new_song_path %></li>
+			</ul>
+		</nav>
 
-	<%= yield %>
+		<div class ="clear">
+		</div>
+
+		<%= yield %>
+
+		<footer>&copy; Songz, ltd</footer>
 
 	</div><!-- #container -->
 
-	<div class="clear"></div>
+
 	
-	<footer>&copy; Songz, ltd</footer>
 
 </body>
 </html>
