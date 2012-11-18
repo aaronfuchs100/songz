@@ -4,27 +4,34 @@
 =======
 <h1>Artists</h1>
 
+<<<<<<< HEAD
 Name
 Photo
 >>>>>>> 3f8ebcab3aee43a9073c3971405e33d9cf12bd5e
+=======
+>>>>>>> f09f3912788cda79ca57f088d171f2af1d32b015
 
  <div class ="clear">
 	</div>
 
 <% @artists.each do |artist| %>
-  <tr>
-    <td><%= artist.name %></td>
-     <div class ="clear">
-	</div>
-    <td><%= image_tag artist.photo %></td>
-     <div class ="clear">
-	</div>
-    <td><%= link_to 'Show', artist %></td>
-    <td><%= link_to 'Edit', edit_artist_path(artist) %></td>
-    <td><%= link_to 'Destroy', artist, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <div class = "element_box">
+        <%= artist.name %>
+         <div class ="clear">
+    	</div>
+        <%= image_tag artist.photo %>
+         <div class ="clear">
+    	</div>
+        <%= link_to 'Show', artist %>
+        <div class ="clear">
+        </div>
+        <%= link_to 'Edit', edit_artist_path(artist) %>
+        <div class ="clear">
+        </div>
+        <%= link_to 'Delete', artist, method: :delete, data: { confirm: 'Are you sure?' } %>
+        <div class ="clear">
+        </div>
+    </div>
 <% end %>
-</table>
 
-<br />
 
-<%= link_to 'New artist', new_artist_path %>

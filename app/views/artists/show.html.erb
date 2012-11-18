@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 <b>Name:</b>
 <%= @artist.name %>
 
@@ -32,11 +33,24 @@
       </ul>
 
     <% end %>  
+=======
+<p><%= @artist.name %></p>
+
+<p><%= image_tag @artist.photo %></p>
+
+<h2>Albums:</h2>
+  <ul class="list">
+  <% @artist.albums.each do |album| %>
+    <li><%= link_to album.name, album %></li>
+>>>>>>> f09f3912788cda79ca57f088d171f2af1d32b015
   <% end %>
   </ul>
+  
 
 
-
-
-<%= link_to 'Edit', edit_artist_path(@artist) %> 
+<div class ="clear">
+</div>
+	<%= link_to 'Edit', edit_artist_path(@artist) %> 
+<div class ="clear">
+</div>
 <%= link_to 'Back', artists_path %>

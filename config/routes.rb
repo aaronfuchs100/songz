@@ -1,6 +1,7 @@
 Songz::Application.routes.draw do
 
   root :to => 'home#index'
+  match '/library' => 'home#library', :via => :get
   resources :albums, :artists, :songs
 
 
