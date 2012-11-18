@@ -7,8 +7,7 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-	
-	<div id="topz">
+	<div id="container">	
 		<header>Songz</header>
 		<nav>
 			<ul>
@@ -21,23 +20,15 @@
 			<li class="add"><%= link_to "Add", new_song_path %></li>
 			</ul>
 		</nav>
-	</div><!--#topz-->
 	
-		<div class ="clear">
-		</div>
+		<div class ="clear"></div>
 
+		<div class="main">
+			<%= yield %>
+		</div><!-- #main -->
 
-	<div id="container">	
-		<%= yield %>
 	</div><!-- #container -->
 
 	<footer>&copy; Songz, ltd</footer>
-<<<<<<< HEAD
-=======
-
-
-	
-
->>>>>>> 567aa11250b7c53591e5557bf0f31ce3da2689f8
 </body>
 </html>

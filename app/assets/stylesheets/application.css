@@ -40,99 +40,60 @@
 
 body {
   font-family: 'Source Code Pro', sans-serif;
-  background: white;
-  background-image: url(assets/images/rails.png);
-  text-decoration: none;
+  background-image: url('assets/images/rails.png');
   color: #FFAE00;
   background-color: #333;
 }
 
-h1 {
-  font-size: 30px;
-  letter-spacing: -3px;
-  margin-bottom: 40px;
-  color: black;
-}
-
 header {
-  font-size: 50px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  color: black;
-  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 20px;
   font-family: 'Montserrat Subrayada', sans-serif;
-  float: left;
-  background-color: #E8E8E8;
-  width: 900px;
+  font-weight: bold;
   text-align: center;
+  font-size: 100px;
 }
 
 
-header a {
-  color: #FFAE00;
+  header a {
+    color: #FFAE00;
+  }
+
+footer{
+  margin: 0 auto;
+  background-color: red;
 }
+
+/*--------------------- NAV BAR ------------------*/
 
 nav {
   background: #E8E8E8; 
+  text-transform: uppercase;
+  letter-spacing: 2px;
   width: 900px;
-  margin: 0px;
-  float: left;
-  text-decoration: none;
-  color: black;
-}
-
-nav ul {
-  padding: 0;
-  list-style: none;
-  text-decoration: none;
   color: black;
 }
 
 nav li {
   font-family: 'Source Code Pro', sans-serif;
-  padding: 5px;
   text-align: left;
-  text-decoration: none;
   text-transform: uppercase;
   font-size: 20px;
   font-weight: bolder;
   float: left;
   text-align: center;
   color: black;
+  list-style: none;
 }
-     nav li a {
-        text-decoration: none;
-        display: block;
-     }
+   nav li a {
+      text-decoration: none;
+      display: block;
+      color: white;
+   }
 
-     nav li a:hover {
-      color: green;
-     }
-
-footer{
-  margin: 50px 260px;
-  color: gray;
-}
-
-/*--------------------- LAYOUT ------------------*/
-
-
-#container {
-  width: 900px;
-  margin: 0 auto;
-  padding: 20px 100px;
-  min-height: 900px;
-  background: white;
-  text-decoration: none;
-}
-
-#topz {
-  width: 900px;
-  margin: 0 auto;
-  background: white;
-  height: 100px;
-}
-
+   nav li a:hover {
+    color: gray;
+   }
 
 .category {
   color: white;
@@ -143,6 +104,7 @@ footer{
   color: black;
   text-align: left;
   margin-right: 50px;
+  margin-left: 5px;
   text-decoration: none;
   font-size: 15px;
   margin-top: 1px;
@@ -153,42 +115,28 @@ footer{
   text-decoration: none;
 }
 
-img {
-  height: 200px;
-  width: 200px;
+/*--------------------- LAYOUT ------------------*/
+
+
+#container {
+  width: 900px;
+  margin: 0 auto;
 }
 
-<<<<<<< HEAD
+#main {
+  width: 900px;
+  margin: 0 auto;
+  background: white;
+}
+
+
+
 /*--------------------- CATEGORY PAGES ------------------*/
 
 
 
+/*--------------------- FORMS ------------------*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-=======
 .form_ui {
   width:  600px;
   margin-left:  60px;
@@ -201,7 +149,5 @@ img {
 .field {
   
 }
-=
->>>>>>> 3f8ebcab3aee43a9073c3971405e33d9cf12bd5e
 
 
