@@ -1,24 +1,10 @@
 
-<p>
-  <b>Name:</b>
-  <%= @song.name %>
-</p>
+<p><%= @song.name %></p>
+<p><%= image_tag @song.photo %></p>
 
-<div class ="clear">
-	</div>
-
-<p>
-  <b>Photo:</b>
-
-  <div class ="clear">
-	</div>
-
-  <%= image_tag @song.photo %>
-</p>
-
-<div class ="clear">
-	</div>
+  <p>Artist: <%= link_to @song.artist.name, @song.artist %></p>
+  <p>Album: <%= link_to @song.album.name, @song.album %></p>
 
 
-<%= link_to 'Edit', edit_song_path(@song) %> 
+<%= link_to 'Edit', edit_song_path(@song) %> |	
 <%= link_to 'Back', songs_path %>

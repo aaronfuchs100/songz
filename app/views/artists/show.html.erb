@@ -1,46 +1,20 @@
 
-<p>
-  <b>Name:</b>
-  <%= @artist.name %>
-</p>
+<p><%= @artist.name %></p>
 
- <div class ="clear">
-	</div>
+<p><%= image_tag @artist.photo %></p>
 
-<p>
-  <b>Photo:</b>
-  <div class ="clear">
-	</div>
-  <%= image_tag @artist.photo %>
-</p>
-
- <div class ="clear">
-	</div>
-
-  <ul>
-  <% Album.all.each do |album| %>
-
-  <p>Details: </p>
-
-    <% if album.artist_id == @artist.id %>
-      <li><%= album.name %></li>
-    
-      <ul>
-        <% Song.all.each do |song| %>
-
-          <% if song.album_id == album.id %>
-            <li><%= song.name %></li>
-          <% end %>
-        
-        <% end %> 
-      </ul>
-
-    <% end %>  
+<h2>Albums:</h2>
+  <ul class="list">
+  <% @artist.albums.each do |album| %>
+    <li><%= link_to album.name, album %></li>
   <% end %>
   </ul>
+  
 
 
-
-
-<%= link_to 'Edit', edit_artist_path(@artist) %> 
+<div class ="clear">
+</div>
+	<%= link_to 'Edit', edit_artist_path(@artist) %> 
+<div class ="clear">
+</div>
 <%= link_to 'Back', artists_path %>

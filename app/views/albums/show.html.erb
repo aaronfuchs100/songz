@@ -1,24 +1,18 @@
-<p id="notice"><%= notice %></p>
 
-<p>
-  <b>Name:</b>
-  <%= @album.name %>
-</p>
+<p><%= @album.name %></p>
+<p><%= image_tag @album.photo %></p>
 
 <div class ="clear">
 	</div>
 
-<p>
-  <b>Photo:</b>
-
-  <div class ="clear">
-	</div>
-  <%= image_tag @album.photo %>
-</p>
-
-<div class ="clear">
-	</div>
+<p>Songs:</p>
+  <ul class="list">
+ 	 <% @album.songs.each do |song| %>
+   <li><%= link_to song.name, song  %></li>
+  <% end %>
+  </ul>
 
 
-<%= link_to 'Edit', edit_album_path(@album) %> |
+<%= link_to 'Edit', edit_album_path(@album) %>
+ |
 <%= link_to 'Back', albums_path %>

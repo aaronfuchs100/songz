@@ -4,21 +4,40 @@
 <div class="form_ui"> 
      <div class = 'field'>
      	<%= f.label :name %>
+         <div class ="clear">
+         </div>
      	<%= f.text_field :name %>
      </div>
      <div class = 'field'>
-     	<%= f.label :photo %><br />
+     	<%= f.label :photo %>
+         <div class ="clear">
+         </div>
 	    <%= f.file_field :photo %>
+         <div class ="clear">
+         </div>
 	    <%= f.hidden_field :photo_cache %>
+         <div class ="clear">
+         </div>
 	    <%= f.text_field :remote_photo_url %>
+         <div class ="clear">
+         </div>
+
+         <%= f.label :artist_id %>
+         <div class ="clear">
+         </div>
+        <%= f.select :artist_id, Artist.all.map{|r| [r.name, r.id]} %>
+        <div class ="clear">
+         </div>
+
+        <%= f.label :album_id %>
+        <div class ="clear">
+         </div>
+         <%= f.select :album_id, Album.all.map{|r| [r.name, r.id]} %>
+         <div class ="clear">
+         </div>
 
      </div>
 
-      <div class='field'>
-         <% Album.all.each do |album| %>
-           <%= check_box_tag 'song[album_ids][]', album.id, album.in?(@song.album.to_a) %>
-           <span><%= album.name %></span>
-         <% end %>
      
      <div class = 'field'>
      	<%= f.submit %>
