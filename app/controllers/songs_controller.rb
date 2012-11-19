@@ -18,6 +18,7 @@ class SongsController < ApplicationController
 		@song = Song.new(params[:song])
 
 		if @song.save
+			flash[:success] = "#{@song.name.capitalize} Succesfully added to your collection"
 			redirect_to songs_path
 		else
 			render :new
