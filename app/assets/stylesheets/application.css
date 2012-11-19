@@ -1,8 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Code+Pro);
 @import url(http://fonts.googleapis.com/css?family=Montserrat+Subrayada);
 
-
-
 /*--------------------- SETUP ------------------*/
 
 /* Box Model Hack */
@@ -144,7 +142,7 @@ nav li {
 /*--------------------- CATEGORY PAGES ------------------*/
 
 .category_header {
-  font-size: 40px;
+  font-size: 60px;
 }
 
 .element_box {
@@ -154,7 +152,7 @@ nav li {
 }
 
 .element_box:hover {
-border: 3px solid white;
+border: 1px solid white;
 }
 
 .element_box img {
