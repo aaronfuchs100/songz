@@ -9,13 +9,18 @@
 #  album_id   :integer
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
+<<<<<<< HEAD
 #  youtube    :string(255)
+=======
+#  song       :string(255)
+>>>>>>> 9c1a6e28de1d20157571434bb49524f4fc896bac
 #
 
 class Song < ActiveRecord::Base
 	belongs_to :album
 	belongs_to :artist
 	mount_uploader :photo, PictureUploader
+	mount_uploader :song, MusicUploader
 
   validates :name, :presence => true
   validates :name, :presence => true
