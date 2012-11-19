@@ -36,58 +36,63 @@
   padding: 0 10px 10px 0; /* note the padding around a left floated image */
 }
 
-/*--------------------- BASE STYLES ------------------*/
+/*--------------------- LAYOUT ------------------*/
 
 body {
   font-family: 'Source Code Pro', sans-serif;
-  background-image: url('assets/images/rails.png');
-  color: #FFAE00;
+  background-image: url('px_by_Gre3g.png');
+  color: #fff;
   background-color: #333;
+}
+
+#container {
+  width: 900px;
+  margin: 0 auto;
 }
 
 header {
   margin-top: 30px;
-  margin-bottom: 20px;
   font-family: 'Montserrat Subrayada', sans-serif;
   font-weight: bold;
   text-align: center;
   font-size: 100px;
 }
 
-
   header a {
     color: #FFAE00;
   }
 
+#main {
+  margin: 0 auto;
+  width: 900px;
+}
+
 footer{
   margin: 0 auto;
-  background-color: red;
+  padding: 20px;
+  background-color: #000;
+  text-align: center;
 }
 
 /*--------------------- NAV BAR ------------------*/
 
 nav {
-  background: #E8E8E8; 
   text-transform: uppercase;
-  letter-spacing: 2px;
-  width: 900px;
-  color: black;
+  margin: 0 auto 100px auto;
+  width: 589px;
+
 }
 
 nav li {
   font-family: 'Source Code Pro', sans-serif;
   text-align: left;
-  text-transform: uppercase;
   font-size: 20px;
-  font-weight: bolder;
   float: left;
-  text-align: center;
-  color: black;
   list-style: none;
 }
+
    nav li a {
       text-decoration: none;
-      display: block;
       color: white;
    }
 
@@ -96,43 +101,77 @@ nav li {
    }
 
 .category {
-  color: white;
-  text-decoration: none;
+  margin-left: 50px;
 }
 
 .add {
-  color: black;
-  text-align: left;
-  margin-right: 50px;
   margin-left: 5px;
-  text-decoration: none;
   font-size: 15px;
   margin-top: 1px;
 }
 
-.home {
-  margin: 0 50px 10px 150px;
-  text-decoration: none;
-}
-
-/*--------------------- LAYOUT ------------------*/
-
-
-#container {
-  width: 900px;
-  margin: 0 auto;
-}
-
-#main {
-  width: 900px;
-  margin: 0 auto;
-  background: white;
-}
-
-
 
 /*--------------------- CATEGORY PAGES ------------------*/
 
+.category_header {
+  font-size: 40px;
+}
+
+.element_box {
+  margin-bottom: 30px;
+  background-color: rgba(255,255,255,.1);
+  padding: 10px 0 10px 20px;
+}
+
+.element_box img {
+  height: 120px;
+  float: left;
+  margin-right: 40px;
+}
+
+.element_box a {
+  text-decoration: none;
+  padding-top: 10px;
+  margin: 40px 10px 0 0;
+  height: 40px;
+  width: 80px;
+  text-align: center;
+  background-color: black;
+  display: block;
+  float: left;
+  color: white;
+}
+
+.element_box a:hover {
+  background-color: gray;
+}
+
+/*--------------------- INDEX PAGES ------------------*/
+
+.artist_name {
+  font-size: 30px;
+  float: left;
+  padding-top: 40px;
+  margin-right: 40px;
+}
+
+.album_name {
+  font-size: 30px;
+  float: left;
+  padding-top: 40px;
+  margin-right: 40px;
+}
+
+.song_name {
+  font-size: 20px;
+  float: left;
+  padding-top: 40px;
+  margin-right: 40px;
+}
+
+.song_photo img {
+  height: 100px;
+}
 
 
 /*--------------------- FORMS ------------------*/
@@ -149,5 +188,3 @@ nav li {
 .field {
   
 }
-
-

@@ -1,37 +1,14 @@
-
-<<<<<<< HEAD
 <h1 class="category_header">Artists</h1>
-=======
-<h1>Artists</h1>
-
-<<<<<<< HEAD
-Name
-Photo
->>>>>>> 3f8ebcab3aee43a9073c3971405e33d9cf12bd5e
-=======
->>>>>>> f09f3912788cda79ca57f088d171f2af1d32b015
-
- <div class ="clear">
-	</div>
 
 <% @artists.each do |artist| %>
-    <div class = "element_box">
-        <%= artist.name %>
-         <div class ="clear">
-    	</div>
+    <div class="element_box">
+        <div class="artist_name"><%= artist.name %></div>
         <%= image_tag artist.photo %>
-         <div class ="clear">
-    	</div>
         <%= link_to 'Show', artist %>
-        <div class ="clear">
-        </div>
         <%= link_to 'Edit', edit_artist_path(artist) %>
-        <div class ="clear">
-        </div>
         <%= link_to 'Delete', artist, method: :delete, data: { confirm: 'Are you sure?' } %>
-        <div class ="clear">
-        </div>
-    </div>
+    <div class="clear"></div>
+    </div><!-- .element_box -->
 <% end %>
 
 

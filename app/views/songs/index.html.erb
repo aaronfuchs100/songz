@@ -1,25 +1,12 @@
 <h1>Songs</h1>
 
-
- <div class ="clear">
-    </div>
-
 <% @songs.each do |song| %>
     <div class = "element_box">
-        <%= song.name %>
-         <div class ="clear">
-        </div>
-        <%= image_tag song.photo %>
-         <div class ="clear">
-        </div>
+        <div class="song_name"><%= song.name %></div><!-- .song_name -->
+        <div class="song_photo"><%= image_tag song.photo %></div><!-- .song_photo -->
         <%= link_to 'Show', song %>
-        <div class ="clear">
-        </div>
         <%= link_to 'Edit', edit_song_path(song) %>
-        <div class ="clear">
-        </div>
         <%= link_to 'Delete', song, method: :delete, data: { confirm: 'Are you sure?' } %>
-        <div class ="clear">
-        </div>
+        <div class ="clear"></div>
     </div>
 <% end %>

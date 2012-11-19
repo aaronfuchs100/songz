@@ -1,25 +1,12 @@
-<h1>Albums</h1>
-
-
- <div class ="clear">
-  </div>
+<h1 class="category_header">Albums</h1>
 
 <% @albums.each do |album| %>
-  <div class = "element_box">
-      <%= album.name %>
-       <div class ="clear">
-      </div>
+  <div class="element_box">
+      <div class="album_name"><%= album.name %></div><!-- .album_name -->
       <%= image_tag album.photo %>
-       <div class ="clear">
-       </div>
       <%= link_to 'Show', album %>
-      <div class ="clear">
-      </div>
       <%= link_to 'Edit', edit_album_path(album) %>
-      <div class ="clear">
-      </div>
       <%= link_to 'Delete', album, method: :delete, data: { confirm: 'Are you sure?' } %>
-      <div class ="clear">
-      </div>
-    </div>
+      <div class ="clear"></div>
+    </div><!-- .element_box -->
 <% end %>
