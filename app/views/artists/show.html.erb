@@ -1,48 +1,10 @@
-
-<<<<<<< HEAD
-<b>Name:</b>
-<%= @artist.name %>
-
- <div class ="clear"></div>
-
-<p>
-  <b>Photo:</b>
-  <div class ="clear"></div>
-  <%= image_tag @artist.photo %>
-</p>
-
- <div class ="clear">
-	</div>
-
-  <ul>
-  <% Album.all.each do |album| %>
-
-  <p>Details: </p>
-
-    <% if album.artist_id == @artist.id %>
-      <li><%= album.name %></li>
-    
-      <ul>
-        <% Song.all.each do |song| %>
-
-          <% if song.album_id == album.id %>
-            <li><%= song.name %></li>
-          <% end %>
-        
-        <% end %> 
-      </ul>
-
-    <% end %>  
-=======
-<p><%= @artist.name %></p>
-
+<p> <%= @artist.name %> </p>
 <p><%= image_tag @artist.photo %></p>
 
 <h2>Albums:</h2>
   <ul class="list">
   <% @artist.albums.each do |album| %>
     <li><%= link_to album.name, album %></li>
->>>>>>> f09f3912788cda79ca57f088d171f2af1d32b015
   <% end %>
   </ul>
   
@@ -54,3 +16,8 @@
 <div class ="clear">
 </div>
 <%= link_to 'Back', artists_path %>
+
+
+
+
+
