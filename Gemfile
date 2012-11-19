@@ -11,6 +11,7 @@ gem 'fog'
 gem 'annotate'
 gem 'rails-footnotes'
 gem 'carrierwave'
+gem 'rmagick'
 
 
 # Gems used only for assets and not required
