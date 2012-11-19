@@ -1,6 +1,6 @@
 <%= render :partial => 'shared/errors', :locals => {:object => @album} %>
 
-<%= form_for @album do |f| %>
+<%= form_for (@album, :html => {:multipart => true}) do |f| %>
 <div class="form_ui"> 
   <div class = "edit_title" >Editing Album</div>
      <div class = 'form_name'>
