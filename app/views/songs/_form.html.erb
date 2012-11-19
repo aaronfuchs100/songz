@@ -1,3 +1,5 @@
+<%= form_for(@song, :html => {:multipart => true}) do |f| %>
+
 <%= render :partial => 'shared/errors', :locals => {:object => @song} %>
 
 <%= form_for @song do |f| %>
@@ -27,6 +29,11 @@
          <div class ="clear">
          </div>
 
+        <div class="youtube">
+            <%= f.label :youtube %><br />
+            <%= f.text_field :youtube %>
+         </div>
+
          <%= f.label :artist_id %>
          <div class ="clear">
          </div>
@@ -49,5 +56,4 @@
      </div>
 </div>     
 <% end %>
-
-<br>
+<% end %>
