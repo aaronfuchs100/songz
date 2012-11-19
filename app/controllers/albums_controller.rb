@@ -16,6 +16,7 @@ class AlbumsController < ApplicationController
     @album = Album.new(params[:album])
 
     if @album.save
+      flash[:success] = "#{@album.name.capitalize} Succesfully added to your collection"
       redirect_to albums_path
     else
       render :new
