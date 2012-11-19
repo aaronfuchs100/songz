@@ -48,6 +48,7 @@ body {
 #container {
   width: 900px;
   margin: 0 auto;
+  min-height: 900px;
 }
 
 header {
@@ -79,7 +80,7 @@ footer{
 nav {
   text-transform: uppercase;
   margin: 0 auto 100px auto;
-  width: 589px;
+  width: 756px;
 
 }
 
@@ -153,6 +154,12 @@ nav li {
   float: left;
   padding-top: 40px;
   margin-right: 40px;
+  width: 150px;
+}
+
+.index_photo{
+  height: 100px;
+  width: 150px;
 }
 
 .album_name {
@@ -160,18 +167,17 @@ nav li {
   float: left;
   padding-top: 40px;
   margin-right: 40px;
+  width: 150px;
 }
 
 .song_name {
-  font-size: 20px;
+  font-size: 30px;
   float: left;
   padding-top: 40px;
   margin-right: 40px;
+  width: 150px;
 }
 
-.song_photo img {
-  height: 100px;
-}
 
 
 /*--------------------- FORMS ------------------*/
