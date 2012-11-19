@@ -1,3 +1,7 @@
+/*
+*= require 'nav'
+*/
+
 @import url(http://fonts.googleapis.com/css?family=Source+Code+Pro);
 @import url(http://fonts.googleapis.com/css?family=Montserrat+Subrayada);
 @import url(http://fonts.googleapis.com/css?family=Julius+Sans+One);
@@ -39,7 +43,6 @@
 /*--------------------- LAYOUT ------------------*/
 
 body {
-  /*font-family: 'Source Code Pro', sans-serif;*/
   font-family: 'Inder', sans-serif;
   background-image: url('px_by_Gre3g.png');
   color: #fff;
@@ -80,14 +83,13 @@ footer{
 
 /*--------------------- NAV BAR ------------------*/
 
-nav {
+/*nav {
   text-transform: uppercase;
   margin: 0 auto 70px auto;
   width: 756px;
 }
 
 nav li {
-  /*font-family: 'Source Code Pro', sans-serif;*/
   font-family: 'Julius Sans One', sans-serif;
   text-align: left;
   font-size: 20px;
@@ -113,7 +115,7 @@ nav li {
   font-size: 15px;
   margin-top: 1px;
 }
-
+*/
 /*--------------------- HOME PAGE ------------------*/
 
 .element_home{

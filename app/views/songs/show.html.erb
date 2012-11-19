@@ -6,6 +6,7 @@
 <div class="artist_album">
  <p>Artist: <%= link_to @song.artist.name, @song.artist %></p>
  <p>Album: <%= link_to @song.album.name, @song.album %></p>
+ <p>Song: <%= audio_tag @song.song, :controls => true %></p>
 </div><!-- .list -->
 
 <div class="edit_button"><%= link_to 'Edit', edit_song_path(@song) %></div><!-- .edit_button -->

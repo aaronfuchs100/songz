@@ -10,6 +10,7 @@
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #  song       :string(255)
+#  genre_id   :integer
 #
 
 class Song < ActiveRecord::Base
