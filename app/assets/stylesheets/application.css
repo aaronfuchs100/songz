@@ -210,7 +210,7 @@ nav li {
   font-size: 30px;
 }
 
-#album_photo {
+.show_photo {
   float: left;
 }
 
