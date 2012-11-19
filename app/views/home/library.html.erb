@@ -2,13 +2,12 @@
   
   <% @artists.each do |artist| %>
   <div class = "library">	
-  <li class ="library_artist" ><%= artist.name%></li>
+  <div class ="library_artist" ><%= artist.name%></div>
 
-  <ul>
   <% @albums.each do |album| %>
 
     <% if album.artist_id == artist.id %>
-      <li class ="library_album" ><%= album.name %></li>
+      <div class ="library_album" ><%= album.name %></div>
     
       <ul>
         <% @songs.each do |song| %>
@@ -22,8 +21,7 @@
 
     <% end %>  
   <% end %>
-  </ul>
-</div>
+</div><!--.library-->
 
   <% end %>
 
