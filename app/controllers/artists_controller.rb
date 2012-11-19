@@ -17,6 +17,7 @@ class ArtistsController < ApplicationController
 		@artist = Artist.new(params[:artist])
 
 		if @artist.save
+			flash[:success] = "#{@artist.name.capitalize} Succesfully added to your collection"
 			redirect_to artists_path
 		else
 			render :new
