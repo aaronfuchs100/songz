@@ -9,6 +9,7 @@
 #  album_id   :integer
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
+#  song       :string(255)
 #
 
 class Song < ActiveRecord::Base
