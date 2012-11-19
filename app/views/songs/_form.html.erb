@@ -1,3 +1,5 @@
+<%= form_for(@song, :html => {:multipart => true}) do |f| %>
+
 <%= render :partial => 'shared/errors', :locals => {:object => @song} %>
 
 <%= form_for @song do |f| %>
@@ -8,6 +10,11 @@
          </div>
      	<%= f.text_field :name %>
      </div>
+      <div class="field">
+        <%= f.label :song %><br />
+        <%= f.file_field :song %>
+      </div>
+
      <div class = 'field'>
      	<%= f.label :photo %>
          <div class ="clear">
@@ -18,8 +25,13 @@
 	    <%= f.hidden_field :photo_cache %>
          <div class ="clear">
          </div>
-	    <%= f.text_field :remote_photo_url %>
+	    <%= f.text_field :remote_photo_url, placeholder: "Insert URL" %>
          <div class ="clear">
+         </div>
+
+        <div class="youtube">
+            <%= f.label :youtube %><br />
+            <%= f.text_field :youtube %>
          </div>
 
          <%= f.label :artist_id %>
@@ -47,5 +59,4 @@
      </div>
 </div>     
 <% end %>
-
-<br>
+<% end %>

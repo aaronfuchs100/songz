@@ -11,7 +11,19 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(:version => 20121119203841) do
+=======
+<<<<<<< HEAD
+ActiveRecord::Schema.define(:version => 20121119215856) do
+=======
+<<<<<<< HEAD
+ActiveRecord::Schema.define(:version => 20121119213026) do
+=======
+ActiveRecord::Schema.define(:version => 20121119212501) do
+>>>>>>> 9c1a6e28de1d20157571434bb49524f4fc896bac
+>>>>>>> b7b74bd9d72697415456978bf2c611710c928bfe
+>>>>>>> c3ea675a31d41aa4cbf8502711dd9cc98e2c4e6f
 
   create_table "albums", :force => true do |t|
     t.string   "name"
@@ -41,6 +53,15 @@ ActiveRecord::Schema.define(:version => 20121119203841) do
     t.integer  "album_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+<<<<<<< HEAD
+    t.string   "youtube"
+=======
+    t.string   "song"
+<<<<<<< HEAD
+    t.integer  "genre_id"
+=======
+>>>>>>> 9c1a6e28de1d20157571434bb49524f4fc896bac
+>>>>>>> b7b74bd9d72697415456978bf2c611710c928bfe
   end
 
 end
