@@ -1,13 +1,10 @@
 <div class="backpage"><< <%= link_to 'Back', albums_path %></div><!-- .back -->
-<div class="show_title"><p>
-	<%= @album.name %></p>
-</div><!-- .show_title -->
- <div class="clear"></div>
-<div id="album_photo"><%= image_tag @album.photo %></div><!-- #album_photo -->
+<div class="show_name"><%= @album.name %></div><!-- .show_title -->
+<div class="show_photo"><%= image_tag @album.photo %></div><!-- .show_photo -->
 <div class="edit_button"><%= link_to 'Edit', edit_album_path(@album) %></div><!-- .edit_button -->
 <div class ="clear"></div>
 
-<p>Songs:</p>
+<h2>Songs:</h2>
   <ul class="list">
  	 <% @album.songs.each do |song| %>
    <li><%= link_to song.name, song  %></li>

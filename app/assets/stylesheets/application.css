@@ -200,11 +200,12 @@ nav li {
   color: gray;
 }
 
-.show_title {
+.show_name {
   font-size: 30px;
+  margin: 30px 0 20px 0;
 }
 
-#album_photo {
+.show_photo {
   float: left;
 }
 
@@ -235,5 +236,14 @@ nav li {
 }
 
 .list li a:hover {
+  color: gray;
+}
+
+.artist_album p a {
+  text-decoration: none;
+  color: white;
+}
+
+.artist_album p a:hover {
   color: gray;
 }
