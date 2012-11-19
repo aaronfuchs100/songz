@@ -87,7 +87,7 @@ nav {
 nav li {
   font-family: 'Source Code Pro', sans-serif;
   text-align: left;
-  font-size: 20px;
+  font-size: 23px;
   float: left;
   list-style: none;
 }
@@ -188,11 +188,29 @@ nav li {
   padding:  15px;
   min-height: 150px;
   border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
   box-shadow: 3px 1px 25px #FFAE00;
 }
 
-.field {
-  
+.form_name {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.form_name input {
+  width: 300px;
+  height: 30px;
+  font-size: 14px;
+}
+
+.form_photo {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.form_photo input.button {
+  width: 300px;
+  height: 200px;
 }
 
 /*--------------------- SHOW PAGES ------------------*/
