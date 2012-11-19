@@ -133,7 +133,7 @@ nav li {
 .element_box a {
   text-decoration: none;
   padding-top: 10px;
-  margin: 40px 10px 0 0;
+  margin: 45px 10px 0 0;
   height: 40px;
   width: 80px;
   text-align: center;
@@ -153,8 +153,8 @@ nav li {
   font-size: 30px;
   float: left;
   padding-top: 40px;
-  margin-right: 40px;
-  width: 150px;
+  width: 410px;
+  text-align: center;
 }
 
 .index_photo{
@@ -163,19 +163,19 @@ nav li {
 }
 
 .album_name {
-  font-size: 30px;
+  font-size: 26px;
   float: left;
-  padding-top: 40px;
-  margin-right: 40px;
-  width: 150px;
+  padding-top: 45px;
+  width: 420px;
+  text-align: center;
 }
 
 .song_name {
-  font-size: 30px;
+  font-size: 20px;
   float: left;
-  padding-top: 40px;
-  margin-right: 40px;
-  width: 150px;
+  padding-top: 45px;
+  width: 420px;
+  text-align: center;
 }
 
 
