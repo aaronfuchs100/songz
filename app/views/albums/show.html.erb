@@ -1,9 +1,11 @@
-
-<p><%= @album.name %></p>
-<p><%= image_tag @album.photo %></p>
-
-<div class ="clear">
-	</div>
+<div class="backpage"><< <%= link_to 'Back', albums_path %></div><!-- .back -->
+<div class="show_title"><p>
+	<%= @album.name %></p>
+</div><!-- .show_title -->
+ <div class="clear"></div>
+<div id="album_photo"><%= image_tag @album.photo %></div><!-- #album_photo -->
+<div class="edit_button"><%= link_to 'Edit', edit_album_path(@album) %></div><!-- .edit_button -->
+<div class ="clear"></div>
 
 <p>Songs:</p>
   <ul class="list">
@@ -11,8 +13,6 @@
    <li><%= link_to song.name, song  %></li>
   <% end %>
   </ul>
+ <div class="clear"></div>
 
 
-<%= link_to 'Edit', edit_album_path(@album) %>
- |
-<%= link_to 'Back', albums_path %>

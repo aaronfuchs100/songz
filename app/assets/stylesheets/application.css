@@ -188,3 +188,52 @@ nav li {
 .field {
   
 }
+
+/*--------------------- SHOW PAGES ------------------*/
+
+.backpage a {
+  text-decoration: none;
+  color: white;
+}
+
+.backpage a:hover {
+  color: gray;
+}
+
+.show_title {
+  font-size: 30px;
+}
+
+#album_photo {
+  float: left;
+}
+
+.edit_button a {
+  text-decoration: none;
+  padding-top: 10px;
+  margin: 0 0 0 20px;
+  height: 40px;
+  width: 80px;
+  text-align: center;
+  background-color: black;
+  display: block;
+  float: left;
+  color: white;
+}
+
+.edit_button a:hover {
+  background-color: gray;
+}
+
+.list {
+  list-style: none;
+}
+
+.list li a {
+  text-decoration: none;
+  color: white;
+}
+
+.list li a:hover {
+  color: gray;
+}
