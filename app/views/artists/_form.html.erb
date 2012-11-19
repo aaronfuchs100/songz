@@ -1,8 +1,7 @@
 <%= render :partial => 'shared/errors', :locals => {:object => @artist} %>
 
-<%= form_for (@artist, :html => {:multipart => true}) do |f| %> 
+<%= form_for @artist, :html => {:multipart => true} do |f| %> 
 <div class="form_ui">
-  <div class = "edit_title" >Editing Artist</div>
      <div class = 'field'>
      	<%= f.label :name %>
          <div class ="clear">
@@ -15,7 +14,7 @@
 	    <%= f.hidden_field :photo_cache %>
           <div class ="clear">
          </div>
-	    <%= f.text_field :remote_photo_url %>
+	    <%= f.text_field :remote_photo_url, placeholder: "Insert URL" %>
      </div>
    
      <div class = 'button'>

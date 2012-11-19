@@ -1,8 +1,7 @@
 <%= render :partial => 'shared/errors', :locals => {:object => @album} %>
 
-<%= form_for (@album, :html => {:multipart => true}) do |f| %>
+<%= form_for @album, :html => {:multipart => true} do |f| %>
 <div class="form_ui"> 
-  <div class = "edit_title" >Editing Album</div>
      <div class = 'form_name'>
         <%= f.label :name %>
         <%= f.text_field :name %>
@@ -11,7 +10,8 @@
       <div class = 'form_photo'><%= f.label :photo %>
         <%= f.file_field :photo %>
         <%= f.hidden_field :photo_cache %>
-        <%= f.text_field :remote_photo_url %>
+      <div class="clear"></div>
+        <%= f.text_field :remote_photo_url, placeholder: "Insert URL" %>
         <%= image_tag(@album.photo_url) if @album.photo? %>
       </div><!-- .form_photo -->
 

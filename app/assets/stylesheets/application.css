@@ -261,11 +261,20 @@ border: 1px solid #FFAE00;
   color: #FFAE00;
 }
 
+.add_edit_header {
+  margin-left: 150px;
+}
+
 /*--------------------- SHOW PAGES ------------------*/
+
+.backpage {
+  text-align: right;
+}
 
 .backpage a {
   text-decoration: none;
   color: white;
+  text-align: right;
 }
 
 .backpage a:hover {
