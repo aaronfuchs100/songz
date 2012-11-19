@@ -1,21 +1,21 @@
+<<<<<<< HEAD
 <p class="show_title" > <%= @artist.name %> </p>
 <p class="show_photo"><%= image_tag @artist.photo %></p>
+=======
+<div class="backpage"><< <%= link_to 'Back', artists_path %></div><!-- .back -->
+<div class="show_name"><%= @artist.name %></div><!-- .show_title -->
+<div class="show_photo"><%= image_tag @artist.photo %></div><!-- .show_photo -->
+<div class="edit_button"><%= link_to 'Edit', edit_artist_path(@artist) %></div><!-- .edit_button -->
+<div class ="clear"></div>
+>>>>>>> 6157d775fa23c247d0e399af20faa79480353c45
 
 <h2>Albums:</h2>
   <ul class="list">
-  <% @artist.albums.each do |album| %>
+  	<% @artist.albums.each do |album| %>
     <li><%= link_to album.name, album %></li>
-  <% end %>
+  	<% end %>
   </ul>
-  
-
-
-<div class ="clear">
-</div>
-	<%= link_to 'Edit', edit_artist_path(@artist) %> 
-<div class ="clear">
-</div>
-<%= link_to 'Back', artists_path %>
+   <div class="clear"></div>
 
 
 
