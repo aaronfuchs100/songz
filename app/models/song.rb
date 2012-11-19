@@ -9,11 +9,8 @@
 #  album_id   :integer
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
-<<<<<<< HEAD
 #  youtube    :string(255)
-=======
 #  song       :string(255)
->>>>>>> 9c1a6e28de1d20157571434bb49524f4fc896bac
 #
 
 class Song < ActiveRecord::Base

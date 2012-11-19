@@ -1,11 +1,7 @@
 <p class="show_title" > <%= @song.name %> </p>
 
-<<<<<<< HEAD
 <%= image_tag @song.photo, :class => "show_photo"  %>
 <div class="backpage"><< <%= link_to 'Back', songs_path %></div><!-- .back -->
-=======
-<div class="backpage"><%= link_to 'Back', songs_path %></div><!-- .back -->
->>>>>>> 9c1a6e28de1d20157571434bb49524f4fc896bac
 <div class="clear"></div>
 <div class="artist_album">
 	 <p>Artist: <%= link_to @song.artist.name, @song.artist %></p>
