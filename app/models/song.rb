@@ -11,6 +11,14 @@
 #  updated_at :datetime         not null
 #  youtube    :string(255)
 #  song       :string(255)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+#  genre_id   :integer
+=======
+>>>>>>> 9c1a6e28de1d20157571434bb49524f4fc896bac
+>>>>>>> b7b74bd9d72697415456978bf2c611710c928bfe
+>>>>>>> c3ea675a31d41aa4cbf8502711dd9cc98e2c4e6f
 #
 
 class Song < ActiveRecord::Base
