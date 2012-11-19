@@ -1,5 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Code+Pro);
 @import url(http://fonts.googleapis.com/css?family=Montserrat+Subrayada);
+@import url(http://fonts.googleapis.com/css?family=Julius+Sans+One);
+@import url(http://fonts.googleapis.com/css?family=Inder);
 
 /*--------------------- SETUP ------------------*/
 
@@ -37,7 +39,8 @@
 /*--------------------- LAYOUT ------------------*/
 
 body {
-  font-family: 'Source Code Pro', sans-serif;
+  /*font-family: 'Source Code Pro', sans-serif;*/
+  font-family: 'Inder', sans-serif;
   background-image: url('px_by_Gre3g.png');
   color: #fff;
   background-color: #333;
@@ -69,9 +72,9 @@ header {
 }
 
 footer{
-  margin: 0 auto;
+  margin: 0 -10px 0 -10px;
   padding: 20px;
-  background-color: #000;
+  background-color: #111;
   text-align: center;
 }
 
@@ -79,15 +82,16 @@ footer{
 
 nav {
   text-transform: uppercase;
-  margin: 0 auto 100px auto;
+  margin: 0 auto 70px auto;
   width: 756px;
 
 }
 
 nav li {
-  font-family: 'Source Code Pro', sans-serif;
+  /*font-family: 'Source Code Pro', sans-serif;*/
+  font-family: 'Julius Sans One', sans-serif;
   text-align: left;
-  font-size: 23px;
+  font-size: 20px;
   float: left;
   list-style: none;
 }
@@ -157,7 +161,7 @@ border: 1px solid #FFAE00;
 }
 
 .element_box img {
-  height: 120px;
+  height: 150px;
   float: left;
   margin-right: 40px;
 }
@@ -330,30 +334,49 @@ h2{
 
 .library{
   float: left;
-  width: 200px;
-  height: 300px;
+  width: 280px;
+  height: 350px;
   background-color: rgba(255, 255, 255, .1);
   margin: 10px;
-  padding: 20px;
+  padding: 0px;
+  border-radius: 5px;
 }
 
 .library:hover{
- border: 3px solid white;
+
 }
 
 .library_artist{
-  font-size: 25px;
-
+  background: #189495;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  text-transform: uppercase;
+  width: 280px;
+  padding: 10px 0 10px 0;
+  font-size: 20px;
+  font-family: 'Julius Sans One', sans-serif;
+  list-style: none;
+  text-align: center;
+  color: white;
 }
 
 .library_album{
-font-size: 20px;
-margin-bottom: 10px;  
+  text-transform: uppercase;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 17px;
+  margin-bottom: 10px;  
+  list-style: none;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
 }
 
 .library_song{
-font-size: 15px;
-margin-top: 2px;  
+  font-size: 12px;
+  margin-top: 2px;  
+  margin-left: -10px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /*--------------------- JAVASCRIPT ------------------*/
