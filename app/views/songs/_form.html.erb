@@ -35,6 +35,9 @@
          <%= f.select :album_id, Album.all.map{|r| [r.name, r.id]} %>
          <div class ="clear">
          </div>
+         <%= f.select :genre_id, Genre.all.map{|r| [r.name, r.id]} %>
+        <div class ="clear">
+         </div>
 
      </div>
 

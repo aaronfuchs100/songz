@@ -1,0 +1,18 @@
+<%= render :partial => 'shared/errors', :locals => {:object => @genre} %>
+
+<%= form_for @genre do |f| %>
+<div class="form_ui"> 
+     <div class = 'field'>
+     	<%= f.label :name %>
+         <div class ="clear">
+         </div>
+     	<%= f.text_field :name %>
+     </div>
+     
+     <div class = 'field'>
+     	<%= f.submit %>
+     </div>
+</div>     
+<% end %>
+
+<br>
