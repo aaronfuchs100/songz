@@ -1,12 +1,13 @@
-<div class="backpage"><< <%= link_to 'Back', songs_path %></div><!-- .back -->
-<div class="show_name"><%= @song.name %></div><!-- .show_title -->
-<div class="show_photo"><%= image_tag @song.photo %></div><!-- .show_photo -->
-<div class="edit_button"><%= link_to 'Edit', edit_song_path(@song) %></div><!-- .edit_button -->
-<div class="clear"></div>
+<p class="show_title" > <%= @song.name %> </p>
+<%= image_tag @song.photo, :class => "show_photo"  %>
 
+<div class="backpage"><< <%= link_to 'Back', songs_path %></div><!-- .back -->
+<div class="clear"></div>
 <div class="artist_album">
  <p>Artist: <%= link_to @song.artist.name, @song.artist %></p>
  <p>Album: <%= link_to @song.album.name, @song.album %></p>
 </div><!-- .list -->
+
+<div class="edit_button"><%= link_to 'Edit', edit_song_path(@song) %></div><!-- .edit_button -->
 
 

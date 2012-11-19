@@ -3,7 +3,7 @@
 <% @albums.each do |album| %>
   <div class="element_box">
       <div class="album_name"><%= album.name %></div><!-- .album_name -->
-      <%= image_tag album.photo %>
+       <%= image_tag album.photo, :class => "index_photo" %>
       <%= link_to 'Show', album %>
       <%= link_to 'Edit', edit_album_path(album) %>
       <%= link_to 'Delete', album, method: :delete, data: { confirm: 'Are you sure?' } %>

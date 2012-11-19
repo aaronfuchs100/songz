@@ -111,6 +111,32 @@ nav li {
   margin-top: 1px;
 }
 
+/*--------------------- HOME PAGE ------------------*/
+
+.element_home{
+  float: left;
+  width: 400px;
+  height: 400px;
+  background-color: rgba(255,255,255,.1);
+  padding: 20px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  margin-left: 30px;
+}
+
+.home_text{
+  font-size: 15px;
+  font-style: cursive;
+}
+
+.home_image{
+  width: 800px;
+  height: 150px;
+  margin-left: 50px;
+  margin-top: -30px;
+  opacity: 0.5;
+}
+
 
 /*--------------------- CATEGORY PAGES ------------------*/
 
@@ -122,6 +148,10 @@ nav li {
   margin-bottom: 30px;
   background-color: rgba(255,255,255,.1);
   padding: 10px 0 10px 20px;
+}
+
+.element_box:hover {
+border: 3px solid white;
 }
 
 .element_box img {
@@ -150,10 +180,10 @@ nav li {
 /*--------------------- INDEX PAGES ------------------*/
 
 .artist_name {
-  font-size: 30px;
+  font-size: 25px;
   float: left;
   padding-top: 40px;
-  width: 410px;
+  width: 350px;
   text-align: center;
 }
 
@@ -163,18 +193,18 @@ nav li {
 }
 
 .album_name {
-  font-size: 26px;
+  font-size: 25px;
   float: left;
-  padding-top: 45px;
-  width: 420px;
+  padding-top: 40px;
+  width: 350px;
   text-align: center;
 }
 
 .song_name {
-  font-size: 20px;
+  font-size: 25px;
   float: left;
-  padding-top: 45px;
-  width: 420px;
+  padding-top: 40px;
+  width: 350px;
   text-align: center;
 }
 
@@ -224,19 +254,30 @@ nav li {
   color: gray;
 }
 
+.show_title {
+  font-size: 30px;
+  margin: 30px 0 20px 0;
+}
+
+h2{
+  font-size: 20px;
+  margin: 30px 0 20px 0;
+}
+
 .show_name {
   font-size: 30px;
   margin: 30px 0 20px 0;
 }
 
 .show_photo {
-  float: left;
+  width: 400px;
+  height: 400px;
 }
 
 .edit_button a {
   text-decoration: none;
   padding-top: 10px;
-  margin: 0 0 0 20px;
+  margin: 20px 20px 0 20px;
   height: 40px;
   width: 80px;
   text-align: center;
@@ -271,3 +312,44 @@ nav li {
 .artist_album p a:hover {
   color: gray;
 }
+
+/*--------------------- LIBRARY ------------------*/
+
+.library{
+  float: left;
+  width: 200px;
+  height: 300px;
+  background-color: rgba(255, 255, 255, .1);
+  margin: 10px;
+  padding: 20px;
+}
+
+.library:hover{
+ border: 3px solid white;
+}
+
+.library_artist{
+  font-size: 25px;
+
+}
+
+.library_album{
+font-size: 20px;
+margin-bottom: 10px;  
+}
+
+.library_song{
+font-size: 15px;
+margin-top: 2px;  
+}
+
+
+
+
+
+
+
+
+
+
+
