@@ -3,7 +3,7 @@
 <% @artists.each do |artist| %>
     <div class="element_box">
         <div class="artist_name"><%= artist.name %></div>
-        <%= image_tag artist.photo %>
+        <%= image_tag artist.photo, :class => "index_photo" %>
         <%= link_to 'Show', artist %>
         <%= link_to 'Edit', edit_artist_path(artist) %>
         <%= link_to 'Delete', artist, method: :delete, data: { confirm: 'Are you sure?' } %>
