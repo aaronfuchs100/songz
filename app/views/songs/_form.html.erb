@@ -4,56 +4,54 @@
 
 <%= form_for @song do |f| %>
 <div class="form_ui"> 
-     <div class = 'field'>
+    <div class = 'field'>
      	<%= f.label :name %>
          <div class ="clear">
-         </div>
+    </div>
      	<%= f.text_field :name %>
-     </div>
-      <div class="field">
-        <%= f.label :song %><br />
-        <%= f.file_field :song %>
-      </div>
+    </div>
 
-     <div class = 'field'>
+    <div class = 'field'>
      	<%= f.label :photo %>
          <div class ="clear">
-         </div>
+    </div>
 	    <%= f.file_field :photo %>
-         <div class ="clear">
-         </div>
+        <div class ="clear">
+    </div>
 	    <%= f.hidden_field :photo_cache %>
-         <div class ="clear">
-         </div>
+         <div class ="clear"></div>
 	    <%= f.text_field :remote_photo_url, placeholder: "Insert URL" %>
-         <div class ="clear">
-         </div>
+         <div class ="clear"></div>
 
-        <div class="youtube">
-            <%= f.label :youtube %><br />
-            <%= f.text_field :youtube %>
-         </div>
+    <div class="song">
+            <%= f.label :song %><br />
+            <%= f.file_field :song %>
+    </div><!-- .song -->
+
+    <div class="youtube">
+        <%= f.label :youtube %><br />
+        <%= f.text_field :youtube %>
+    </div><!-- .youtube -->
 
          <%= f.label :artist_id %>
-         <div class ="clear">
-         </div>
+         <div class ="clear"></div>
+
         <%= f.select :artist_id, Artist.all.map{|r| [r.name, r.id]} %>
-        <div class ="clear">
-         </div>
+        <div class ="clear"></div>
 
         <%= f.label :album_id %>
-        <div class ="clear">
-         </div>
-         <%= f.select :album_id, Album.all.map{|r| [r.name, r.id]} %>
-         <div class ="clear">
-         </div>
+        <div class ="clear"></div>
 
-     </div>
+        <%= f.select :album_id, Album.all.map{|r| [r.name, r.id]} %>
+        <div class ="clear"></div>
+
+        </div>
 
      
      <div class = 'field'>
      	<%= f.submit %>
      </div>
-</div>     
+
+</div><!-- .form_ui -->     
 <% end %>
 <% end %>
