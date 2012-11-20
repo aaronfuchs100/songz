@@ -10,7 +10,7 @@ class GenresController < ApplicationController
   end
   def show
     genre_id = params[:id]
-    @genre = Genre.find(album_id)
+    @genre = Genre.find(genre_id)
   end
   def create
     @genre = Genre.new(params[:genre])

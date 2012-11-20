@@ -1,8 +1,13 @@
 <p class="show_title" > <%= @genre.name %> </p>
 
-<div class="backpage"><< <%= link_to 'Back', genres_path %></div><!-- .back -->
+<div class="backpage"><%= link_to 'Back', genres_path %></div><!-- .back -->
 <div class="clear"></div>
 
+<h2>Songs:</h2>
+  <ul class="list">
+ 	 <% @genre.songs.each do |song| %>
+   <li><%= link_to song.name, song  %></li>
+  <% end %>
 </div><!-- .list -->
 
 <div class="edit_button"><%= link_to 'Edit', edit_genre_path(@genre) %></div><!-- .edit_button -->
