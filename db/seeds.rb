@@ -10,11 +10,30 @@ a4 = Artist.create(:name => "Ben Harper", :remote_photo_url => "http://userserve
 a5 = Artist.create(:name => "Coldplay", :remote_photo_url => "http://www.wearelistening.org/blog/wp-content/uploads/2009/05/coldplay.bmp")
 a6 = Artist.create(:name => "LMFAO", :remote_photo_url => "http://hiphopwired.com/wp-content/uploads/2012/04/lmfao-great-music-band-191.jpg")
 
+a1.songs = [s1, s2, s3]
+a2.songs << s7
+a3.songs = [s4, s5, s6]
+a4.songs << s8
+a5.songs = [s9, s10, s11]
+
+a1.albums << al1 
+a2.albums << al2
+a3.albums << al3
+a4.albums << al4
+a5.albums << al5
+
+
 al1 = Album.create(:name => "Achtung Baby", :remote_photo_url => "http://www.rollingstone.com/assets/images/album_review/be05c431d131e3221cf6fbb963e60a9f5c04acde.jpg")
 al2 = Album.create(:name => "The Light of The Sun", :remote_photo_url => "http://ecx.images-amazon.com/images/I/41TXzp08EDL._SL500_AA300_.jpg")
 al3 = Album.create(:name => "21", :remote_photo_url => "http://loft965.files.wordpress.com/2010/12/10.jpg")
 al4 = Album.create(:name => "Give Till It's Gone", :remote_photo_url => "http://amoscontentgroup.com/amos/upload/2011/05/ben-harper-give-till-its-gone.jpg")
 al5 = Album.create(:name => "Mylo Xyloto", :remote_photo_url => "http://static.fimfiction.net/images/story_images/45822.gif?1345324066")
+
+al1.songs = [s1, s2, s3]
+al2.songs << s7
+al3.songs = [s4, s5, s6]
+al4.songs << s8
+al5.songs = [s9, s10, s11]
 
 s1 = Song.create(:name => "One", :remote_photo_url => "http://www.rollingstone.com/assets/images/album_review/be05c431d131e3221cf6fbb963e60a9f5c04acde.jpg")
 s2 = Song.create(:name => "Even Better Than the Real Thing", :remote_photo_url => "http://www.rollingstone.com/assets/images/album_review/be05c431d131e3221cf6fbb963e60a9f5c04acde.jpg")
@@ -35,6 +54,8 @@ g4 = Genre.create(:name => "Jazz")
 g5 = Genre.create(:name => "Alternative")
 g6 = Genre.create(:name => "Hip-Hop/Rap")
 g7 = Genre.create(:name => "Pop")
+
+
 
 
 s1.genres << g1
