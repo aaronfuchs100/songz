@@ -42,8 +42,8 @@ ActiveRecord::Schema.define(:version => 20121119215856) do
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
     t.string   "song"
-    t.string   "youtube"
     t.integer  "genre_id"
+    t.string   "youtube"
   end
 
 end
